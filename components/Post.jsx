@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import Image from 'next/image';
+import CategoryLabel from './CategoryLabel';
 
 function Post({ post }) {
   return (
@@ -18,7 +19,7 @@ function Post({ post }) {
           {post.frontmatter.date}
         </span>
 
-        <div>{post.frontmatter.category}</div>
+        <CategoryLabel>{post.frontmatter.category}</CategoryLabel>
       </div>
 
       <div className='mt-2'>
