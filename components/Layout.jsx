@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import Header from './Header';
 
-function Layout({ title, keywords, description, children }) {
+export default function Layout({ title, keywords, description, children }) {
   return (
     <div>
       <Head>
@@ -23,5 +23,3 @@ Layout.defaultProps = {
   keywords: 'development, coding, programming',
   description: 'The best info and news for tech developers',
 };
-
-export default Layout;

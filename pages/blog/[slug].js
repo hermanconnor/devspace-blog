@@ -5,8 +5,8 @@ import Link from 'next/link';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 
-import Layout from '../../components/Layout';
-import CategoryLabel from '../../components/CategoryLabel';
+import Layout from '@/components/Layout';
+import CategoryLabel from '@/components/CategoryLabel';
 
 function PostPage({
   frontmatter: {
